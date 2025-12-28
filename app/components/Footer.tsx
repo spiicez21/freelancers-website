@@ -40,15 +40,14 @@ export default function Footer() {
                     <div>
                         <h4 className="font-display font-medium text-gray-900 mb-6">Legal</h4>
                         <ul className="space-y-4 text-sm text-gray-500">
-                            <li><Link href="#" className="hover:text-primary">Privacy Policy</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Terms of Service</Link></li>
+                            <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-400">© 2025 College Freelancers Club. All rights reserved.</p>
-                    <p className="text-xs text-gray-400">Designed with Donezo Aesthetics</p>
                 </div>
             </div>
         </footer>
