@@ -10,7 +10,7 @@ export default function About() {
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <h1 className="text-4xl md:text-5xl font-display font-medium text-primary mb-6">Empowering Student Creatives</h1>
                     <p className="text-xl text-gray-500 leading-relaxed">
-                        We are the official Freelancers Club of [College Name]. Our mission is to bridge the gap between academic learning and professional freelancing.
+                        We are the official Freelancers Club of Kongu Engineering College. Our mission is to bridge the gap between academic learning and professional freelancing.
                     </p>
                 </div>
 

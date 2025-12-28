@@ -45,7 +45,7 @@ export default function Home() {
             A curated network of <br /> student freelancers.
           </h1>
           <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-            Designers. Developers. Creators. Ready to work from [College Name].
+            Designers. Developers. Creators. Ready to work from Kongu Engineering College.
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link href="/members">
