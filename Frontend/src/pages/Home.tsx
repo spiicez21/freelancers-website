@@ -10,26 +10,6 @@ const Home: React.FC = () => {
         <div className="space-y-24 pb-10">
             <Hero />
 
-            {/* Stats Ticker */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-zinc-200 dark:border-zinc-800 py-8">
-                <div className="text-center">
-                    <h4 className="text-3xl font-bold text-zinc-900 dark:text-white">50+</h4>
-                    <span className="text-xs uppercase tracking-wide text-zinc-500 font-semibold">Projects Delivered</span>
-                </div>
-                <div className="text-center">
-                    <h4 className="text-3xl font-bold text-zinc-900 dark:text-white">30+</h4>
-                    <span className="text-xs uppercase tracking-wide text-zinc-500 font-semibold">Student Experts</span>
-                </div>
-                <div className="text-center">
-                    <h4 className="text-3xl font-bold text-zinc-900 dark:text-white">100%</h4>
-                    <span className="text-xs uppercase tracking-wide text-zinc-500 font-semibold">Client Satisfaction</span>
-                </div>
-                <div className="text-center">
-                    <h4 className="text-3xl font-bold text-zinc-900 dark:text-white">24h</h4>
-                    <span className="text-xs uppercase tracking-wide text-zinc-500 font-semibold">Avg. Response Time</span>
-                </div>
-            </div>
-
             {/* Why Choose Us */}
             <section>
                 <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
