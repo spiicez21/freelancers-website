@@ -3,24 +3,25 @@ import React from 'react';
 const Legal: React.FC = () => {
     return (
         <div className="max-w-3xl mx-auto space-y-12 py-10">
-            <section className="space-y-4">
-                <h1 className="text-3xl font-bold dark:text-white">Privacy Policy</h1>
-                <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed text-sm">
-                    This privacy policy sets out how our website uses and protects any information that you give us when you use this website. We are committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.
-                </p>
-            </section>
+            <h1 className="text-3xl font-bold text-zinc-900 dark:text-white mb-8">Legal Information</h1>
 
-            <section className="space-y-4">
-                <h2 className="text-2xl font-bold dark:text-white">Terms of Service</h2>
-                <div className="space-y-4 text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
-                    <p>
-                        By accessing this website, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+            <div className="space-y-12">
+                <section className="space-y-4">
+                    <h2 className="text-xl font-bold text-zinc-900 dark:text-white">Privacy Policy</h2>
+                    <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <p>
-                        The materials on this web site are provided "as is". We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.
+                </section>
+
+                <section className="space-y-4">
+                    <h2 className="text-xl font-bold text-zinc-900 dark:text-white">Terms of Service</h2>
+                    <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     );
 };

@@ -4,12 +4,14 @@ import { Users, Target, ShieldCheck } from 'lucide-react';
 const About: React.FC = () => {
     return (
         <div className="space-y-16 max-w-4xl mx-auto">
-            <section className="text-center space-y-6">
-                <h1 className="text-4xl font-bold dark:text-white">About the Club</h1>
-                <p className="text-lg text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto">
-                    We are a collective of driven student freelancers, bridging the gap between academic learning and real-world impact.
+            <div className="text-center space-y-6 max-w-3xl mx-auto mb-20">
+                <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white">
+                    Building the future of <span className="text-emerald-500">freelance</span>
+                </h1>
+                <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                    College Freelancers is a platform bridging the gap between talented computer science students and businesses needing high-quality digital solutions.
                 </p>
-            </section>
+            </div>
 
             <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-zinc-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800 text-center space-y-3">
@@ -37,12 +39,17 @@ const About: React.FC = () => {
 
             <section className="space-y-6">
                 <h2 className="text-2xl font-bold dark:text-white">Meet the Core Team</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {[1, 2, 3, 4].map((i) => (
-                        <div key={i} className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 text-center">
-                            <div className="w-20 h-20 mx-auto bg-zinc-200 dark:bg-zinc-800 rounded-full mb-3" />
-                            <h4 className="font-semibold dark:text-white">Team Member</h4>
-                            <span className="text-xs text-emerald-500 font-medium">Lead Organizer</span>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {[
+                        { title: 'Quality First', desc: 'We maintain high standards through mentorship and peer code reviews.' },
+                        { title: 'Fresh Perspective', desc: 'Students bring the latest tech stack knowledge and innovative ideas.' },
+                        { title: 'Reliable Delivery', desc: 'Managed by senior students to ensure deadlines and requirements are met.' }
+                    ].map((value) => (
+                        <div key={value.title} className="p-8 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                            <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-3">{value.title}</h3>
+                            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                {value.desc}
+                            </p>
                         </div>
                     ))}
                 </div>

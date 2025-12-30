@@ -23,8 +23,10 @@ const Layout: React.FC = () => {
             <main className="pt-16 pb-6 px-4 max-w-screen-xl mx-auto">
                 <Outlet />
             </main>
-            <footer className="border-t border-zinc-200 dark:border-zinc-800 py-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
-                <p>&copy; {new Date().getFullYear()} College Freelancers Platform. All rights reserved.</p>
+            <footer className="border-t border-zinc-200 dark:border-zinc-800 py-8 mt-12 bg-zinc-50 dark:bg-zinc-950">
+                <div className="max-w-screen-xl mx-auto px-4 text-center">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">&copy; {new Date().getFullYear()} College Freelancers Platform. All rights reserved.</p>
+                </div>
             </footer>
         </div>
     );

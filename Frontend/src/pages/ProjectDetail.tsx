@@ -38,8 +38,8 @@ const ProjectDetail: React.FC = () => {
             <header className="space-y-8">
                 <div className="space-y-4 max-w-3xl">
                     <span className="text-emerald-500 font-bold tracking-wider uppercase text-xs border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 rounded-full">{project.category}</span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-white leading-tight">{project.title}</h1>
-                    <p className="text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl leading-relaxed">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white leading-tight">{project.title}</h1>
+                    <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
                         A strategic redesign focused on performance, accessibility, and user engagement for a leading retail brand.
                     </p>
                 </div>
@@ -54,14 +54,14 @@ const ProjectDetail: React.FC = () => {
                 {/* Main Content */}
                 <div className="lg:col-span-8 space-y-12">
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-bold dark:text-white">The Challenge</h2>
+                        <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">The Challenge</h2>
                         <p className="text-zinc-600 dark:text-zinc-400 leading-loose text-lg">
                             {project.challenge}
                         </p>
                     </section>
 
                     <section className="space-y-4">
-                        <h2 className="text-2xl font-bold dark:text-white">The Solution</h2>
+                        <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">The Solution</h2>
                         <p className="text-zinc-600 dark:text-zinc-400 leading-loose text-lg">
                             {project.solution}
                         </p>
@@ -78,7 +78,7 @@ const ProjectDetail: React.FC = () => {
 
                     {/* Results */}
                     <section className="py-8 border-y border-zinc-200 dark:border-zinc-800">
-                        <h2 className="text-2xl font-bold dark:text-white mb-8">Key Results</h2>
+                        <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-8">Key Results</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                             {project.results.map((res) => (
                                 <div key={res.label}>

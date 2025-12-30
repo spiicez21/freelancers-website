@@ -5,54 +5,55 @@ import Button from '../components/ui/Button';
 const Hire: React.FC = () => {
     return (
         <div className="max-w-2xl mx-auto space-y-10">
-            <div className="text-center space-y-3">
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-500">Work With Us</span>
-                <h1 className="text-4xl font-bold dark:text-white">Start Your Project</h1>
-                <p className="text-zinc-500 dark:text-zinc-400">Tell us about your goals. We'll match you with the perfect student talent.</p>
+            <div className="text-center space-y-4 mb-16">
+                <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400 pb-2">
+                    Start Your Project
+                </h1>
+                <p className="text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl mx-auto">
+                    Tell us about your vision. Our talented student freelancers are ready to bring it to life with professional quality and fresh perspectives.
+                </p>
             </div>
-
             <form className="bg-white dark:bg-zinc-900 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-xl dark:shadow-black/20 space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                        <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Name</label>
-                        <input type="text" className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm transition-all" placeholder="Your Name" />
+                    <div>
+                        <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Your Name</label>
+                        <input type="text" className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white placeholder:text-zinc-400" placeholder="John Doe" />
                     </div>
-                    <div className="space-y-2">
-                        <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Organization</label>
-                        <input type="text" className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm transition-all" placeholder="Company / Startup" />
+                    <div>
+                        <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Organization</label>
+                        <input type="text" className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white placeholder:text-zinc-400" placeholder="Company Name" />
                     </div>
                 </div>
 
-                <div className="space-y-2">
-                    <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Email</label>
-                    <input type="email" className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm transition-all" placeholder="you@example.com" />
+                <div>
+                    <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Email Address</label>
+                    <input type="email" className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white placeholder:text-zinc-400" placeholder="john@example.com" />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                        <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Project Type</label>
-                        <select className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm transition-all appearance-none">
+                    <div>
+                        <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Project Type</label>
+                        <select className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white appearance-none">
                             <option>Web Development</option>
-                            <option>Design & Branding</option>
                             <option>Mobile App</option>
-                            <option>Content & Copy</option>
+                            <option>UI/UX Design</option>
                             <option>Other</option>
                         </select>
                     </div>
-                    <div className="space-y-2">
-                        <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Budget Range</label>
-                        <select className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm transition-all appearance-none">
-                            <option>$500 - $1k</option>
+                    <div>
+                        <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Budget Range</label>
+                        <select className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white appearance-none">
                             <option>$1k - $5k</option>
-                            <option>$5k+</option>
+                            <option>$5k - $10k</option>
+                            <option>$10k+</option>
                             <option>Not sure yet</option>
                         </select>
                     </div>
                 </div>
 
-                <div className="space-y-2">
-                    <label className="text-xs font-semibold uppercase text-zinc-500 dark:text-zinc-400 tracking-wide">Project Details</label>
-                    <textarea rows={4} className="w-full px-4 py-3 bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm resize-none transition-all" placeholder="Describe your project, goals, and timeline..."></textarea>
+                <div>
+                    <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">Project Details</label>
+                    <textarea rows={4} className="w-full px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all text-zinc-900 dark:text-white placeholder:text-zinc-400 resize-none" placeholder="Tell us about your project..."></textarea>
                 </div>
 
                 <Button variant="primary" size="lg" className="w-full gap-2 group">
