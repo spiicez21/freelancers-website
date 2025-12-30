@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-emerald-500/15 rounded-full blur-[80px] -z-10 pointer-events-none" />
 
             <div className="space-y-5 max-w-3xl mx-auto z-10">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white leading-tight">
                     A curated network of <br />
                     <span className="bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
                         student freelancers
