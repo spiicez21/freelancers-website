@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, Filter } from 'lucide-react';
+import MemberCard from '../components/MemberCard';
 
 const Members: React.FC = () => {
     const members = [
@@ -25,10 +26,10 @@ const Members: React.FC = () => {
                         <input
                             type="text"
                             placeholder="Search members..."
-                            className="w-full pl-10 pr-4 py-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white"
+                            className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm"
                         />
                     </div>
-                    <button className="p-2 border border-zinc-200 dark:border-zinc-800 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+                    <button className="p-2.5 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
                         <Filter size={20} />
                     </button>
                 </div>
@@ -36,31 +37,10 @@ const Members: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {members.map((member) => (
-                    <div key={member.id} className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 rounded-2xl hover:border-emerald-500/50 transition-all group relative overflow-hidden">
-                        {/* Gradient glow on hover */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-
-                        <div className="flex items-start justify-between mb-4">
-                            <div className="w-12 h-12 rounded-full bg-linear-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-700"></div>
-                            <span className={`text-xs px-2 py-1 rounded-full border ${member.status === 'Available'
-                                    ? 'bg-emerald-500/10 text-emerald-600 border-emerald-500/20 dark:text-emerald-400'
-                                    : 'bg-zinc-100 text-zinc-500 border-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:border-zinc-700'
-                                }`}>
-                                {member.status}
-                            </span>
-                        </div>
-
-                        <h3 className="text-xl font-bold dark:text-white mb-1 group-hover:text-emerald-500 transition-colors">{member.name}</h3>
-                        <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">{member.role}</p>
-
-                        <div className="flex flex-wrap gap-2">
-                            {member.skills.map(skill => (
-                                <span key={skill} className="text-xs px-2 py-1 rounded-md bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400">
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                    <MemberCard
+                        key={member.id}
+                        {...member}
+                    />
                 ))}
             </div>
         </div>
