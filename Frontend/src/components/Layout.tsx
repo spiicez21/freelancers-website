@@ -44,7 +44,7 @@ const Layout: React.FC = () => {
                             <h4 className="font-bold text-zinc-900 dark:text-white mb-6 text-lg">Platform</h4>
                             <ul className="space-y-4 text-sm text-zinc-500 dark:text-zinc-400 font-medium">
                                 <li><a href="/members" className="hover:text-emerald-500 transition-colors">Browse Talent</a></li>
-                                <li><a href="/works" className="hover:text-emerald-500 transition-colors">How it Works</a></li>
+                                <li><a href="/how-it-works" className="hover:text-emerald-500 transition-colors">How it Works</a></li>
                             </ul>
                         </div>
 
@@ -52,8 +52,8 @@ const Layout: React.FC = () => {
                             <h4 className="font-bold text-zinc-900 dark:text-white mb-6 text-lg">Company</h4>
                             <ul className="space-y-4 text-sm text-zinc-500 dark:text-zinc-400 font-medium">
                                 <li><a href="/about" className="hover:text-emerald-500 transition-colors">About Us</a></li>
-                                <li><a href="#" className="hover:text-emerald-500 transition-colors">Terms of Service</a></li>
-                                <li><a href="#" className="hover:text-emerald-500 transition-colors">Privacy Policy</a></li>
+                                <li><a href="/terms" className="hover:text-emerald-500 transition-colors">Terms of Service</a></li>
+                                <li><a href="/privacy" className="hover:text-emerald-500 transition-colors">Privacy Policy</a></li>
                             </ul>
                         </div>
 

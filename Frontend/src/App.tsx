@@ -6,8 +6,13 @@ import Works from './pages/Works';
 import Hire from './pages/Hire';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Legal from './pages/Legal';
 import ProjectDetail from './pages/ProjectDetail';
+import HowItWorks from './pages/HowItWorks';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
+import HelpCenter from './pages/HelpCenter';
+import HiringGuide from './pages/HiringGuide';
+import ServerStatus from './pages/ServerStatus';
 
 function App() {
   return (
@@ -18,11 +23,16 @@ function App() {
           <Route path="members" element={<Members />} />
           <Route path="members/:id" element={<Portfolio />} />
           <Route path="works" element={<Works />} />
+          <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="/hire" element={<Hire />} />
           <Route path="/about" element={<About />} />
           <Route path="/works/:id" element={<ProjectDetail />} />
           <Route path="/members/:id" element={<Portfolio />} />
-          <Route path="terms" element={<Legal />} />
+          <Route path="terms" element={<Terms />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="help" element={<HelpCenter />} />
+          <Route path="guide" element={<HiringGuide />} />
+          <Route path="status" element={<ServerStatus />} />
           <Route path="*" element={<div className='text-center py-20 dark:text-white'>404 Not Found</div>} />
         </Route>
       </Routes>
