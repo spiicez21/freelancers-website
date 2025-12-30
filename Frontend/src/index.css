@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #10b981;
+  /* emerald-500 */
+  --color-brand-secondary: #4ade80;
+  /* green-400 */
+  --color-brand-dark: #09090b;
+  /* zinc-950 */
+  --color-brand-light: #f4f4f5;
+  /* zinc-100 */
+
+  --font-display: "Inter", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-emerald-500/30;
+  }
+
+  .dark body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+/* Custom Gradient Utilities */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-green-500;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-emerald-500 to-green-500;
+  }
+}
