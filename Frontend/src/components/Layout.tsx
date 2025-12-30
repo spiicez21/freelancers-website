@@ -21,7 +21,7 @@ const Layout: React.FC = () => {
     return (
         <div className="min-h-screen flex flex-col bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
             <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-            <main className="pt-16 pb-6 px-4 max-w-screen-2xl mx-auto w-full flex-grow">
+            <main className="pt-30 pb-6 px-4 max-w-screen-2xl mx-auto w-full flex-grow">
                 <Outlet />
             </main>
 
