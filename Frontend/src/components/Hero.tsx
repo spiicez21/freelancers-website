@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative pt-6 pb-20">
+        <section className="relative w-[calc(100vw-20px)] relative left-1/2 -ml-[calc(50vw-10px)] pb-10">
             {/* Main Rounded Container */}
-            <div className="relative w-full aspect-[16/16] md:aspect-[16/9] lg:aspect-[2.4/1] bg-black rounded-[40px] overflow-hidden group">
+            <div className="relative w-full min-h-[60vh] md:min-h-[85vh] bg-black rounded-[40px] overflow-hidden group">
                 {/* Background Image */}
                 <img
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
@@ -15,25 +15,25 @@ const Hero: React.FC = () => {
                 />
 
                 {/* Gradient Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
 
                 {/* Content Container */}
-                <div className="absolute inset-0 p-8 md:p-14 flex flex-col justify-between">
+                <div className="absolute inset-0 p-8 md:px-12 md:py-20 flex flex-col justify-center md:justify-center items-start">
                     {/* Top Content */}
-                    <div>
-                        <span className="text-white/80 font-medium tracking-wide">#1 Student Freelance Platform</span>
-                        <h1 className="mt-4 text-5xl md:text-7xl font-bold text-white leading-tight max-w-2xl">
+                    <div className="max-w-4xl">
+                        <span className="text-white/80 font-medium tracking-wide text-lg md:text-xl mb-4 block">#1 Student Freelance Platform</span>
+                        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] tracking-tighter">
                             New Energy <br /> <span className="text-emerald-400">for the Future</span>
                         </h1>
                     </div>
 
                     {/* Bottom Action Row (Visual Only, real links in footer/navbar) */}
-                    <div className="flex gap-6 items-center">
-                        <Link to="/hire" className="flex items-center gap-2 text-white hover:text-emerald-400 transition-colors group/link">
-                            Get in touch <ArrowUpRight className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                    <div className="flex gap-8 items-center mt-12">
+                        <Link to="/hire" className="flex items-center gap-3 text-white text-lg hover:text-emerald-400 transition-colors group/link">
+                            Get in touch <ArrowUpRight className="w-6 h-6 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
                         </Link>
-                        <Link to="/works" className="flex items-center gap-2 text-white hover:text-emerald-400 transition-colors group/link">
-                            Our services <ArrowUpRight className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                        <Link to="/works" className="flex items-center gap-3 text-white text-lg hover:text-emerald-400 transition-colors group/link">
+                            Our services <ArrowUpRight className="w-6 h-6 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
                         </Link>
                     </div>
                 </div>
@@ -57,18 +57,19 @@ const Hero: React.FC = () => {
                         </div>
 
                         {/* Content Grid */}
-                        <div className="grid grid-cols-3 gap-12 pr-10 pb-10">
+                        {/* Content Grid */}
+                        <div className="grid grid-cols-3 gap-16 pr-16 pb-14 pt-4">
                             <div>
-                                <h3 className="text-4xl font-bold text-zinc-900 dark:text-white">50+</h3>
-                                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 max-w-[100px]">Projects Delivered</p>
+                                <h3 className="text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white">50+</h3>
+                                <p className="text-base text-zinc-500 dark:text-zinc-400 mt-2">Projects Delivered</p>
                             </div>
                             <div>
-                                <h3 className="text-4xl font-bold text-zinc-900 dark:text-white">30+</h3>
-                                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 max-w-[100px]">Student Experts</p>
+                                <h3 className="text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white">30+</h3>
+                                <p className="text-base text-zinc-500 dark:text-zinc-400 mt-2">Student Experts</p>
                             </div>
                             <div>
-                                <h3 className="text-4xl font-bold text-zinc-900 dark:text-white">100%</h3>
-                                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 max-w-[100px]">Client Satisfaction</p>
+                                <h3 className="text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white">100%</h3>
+                                <p className="text-base text-zinc-500 dark:text-zinc-400 mt-2">Client Satisfaction</p>
                             </div>
                         </div>
                     </div>
