@@ -33,7 +33,7 @@ const MemberCard: React.FC<MemberProps> = ({ id, name, role, skills }) => {
                     </div>
 
                     <p className="text-zinc-600 dark:text-zinc-300 text-sm font-medium leading-relaxed mb-4 line-clamp-2">
-                        {role} who focuses on simplicity & usability.
+                        {role} • {skills.slice(0, 3).join(', ')}
                     </p>
 
                     <div className="flex items-center justify-between mt-auto">

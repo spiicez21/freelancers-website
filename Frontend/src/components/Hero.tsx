@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, PlayCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
@@ -30,10 +30,10 @@ const Hero: React.FC = () => {
                     {/* Bottom Action Row (Visual Only, real links in footer/navbar) */}
                     <div className="flex gap-8 items-center mt-12">
                         <Link to="/hire" className="flex items-center gap-3 text-white text-lg hover:text-emerald-400 transition-colors group/link">
-                            Get in touch <ArrowUpRight className="w-6 h-6 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                            Get in touch <ArrowRight className="ml-2 group-hover/link:translate-x-1 transition-transform" />
                         </Link>
                         <Link to="/works" className="flex items-center gap-3 text-white text-lg hover:text-emerald-400 transition-colors group/link">
-                            Our services <ArrowUpRight className="w-6 h-6 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                            Our services <ArrowRight className="w-6 h-6 group-hover/link:translate-x-1 transition-transform" />
                         </Link>
                     </div>
                 </div>

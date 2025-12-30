@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowUpRight, Calendar, Users, Layers, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Calendar, Users, Layers, ExternalLink } from 'lucide-react';
 import Button from '../components/ui/Button';
 
 const ProjectDetail: React.FC = () => {
-    const { id } = useParams<{ id: string }>();
+    useParams<{ id: string }>();
 
     // Mock data - in a real app, fetch based on ID
     const project = {

@@ -1,10 +1,9 @@
 import React from 'react';
-import { Mail, Linkedin, Globe, Download, ArrowLeft } from 'lucide-react';
-import { Link, useParams } from 'react-router-dom';
+import { Linkedin, Globe, Download, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 
 const Portfolio: React.FC = () => {
-    const { id } = useParams<{ id: string }>();
 
     // Mock data based on ID - normally fetched from API
     // For demo purposes, we'll just display static data

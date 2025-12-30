@@ -1,8 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import MemberCard from '../components/MemberCard';
-import ProjectCard from '../components/ProjectCard'; // Make sure this path is correct if we want to use it here, or stick to features if requested.
-import { Zap, Shield, Rocket, ArrowRight } from 'lucide-react';
+
+import { ArrowRight, Lightbulb, ShieldCheck, Gem } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
