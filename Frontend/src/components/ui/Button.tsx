@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', size = 'md', class
     const baseStyles = "inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
 
     const variants = {
-        primary: "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 focus:ring-emerald-500 border border-transparent",
+        primary: "bg-gradient-primary text-white shadow-lg shadow-emerald-500/25 hover:shadow-emerald-900/40 hover:brightness-110 active:scale-95 focus:ring-emerald-500 border border-transparent",
         secondary: "bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-700 focus:ring-zinc-200 dark:focus:ring-zinc-700 shadow-sm",
         outline: "bg-transparent border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 text-zinc-700 dark:text-zinc-200 focus:ring-zinc-500",
         ghost: "bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800/50 text-zinc-700 dark:text-zinc-200"

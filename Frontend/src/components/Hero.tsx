@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                 />
 
-                {/* Gradient Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+                {/* Gradient Overlay for Text Readability - Royal Green Tint */}
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/40 to-black/10" />
 
                 {/* Content Container */}
                 <div className="absolute inset-0 p-8 md:px-12 md:py-20 flex flex-col justify-center md:justify-center items-start">
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                     <div className="max-w-4xl">
                         <span className="text-white/80 font-medium tracking-wide text-lg md:text-xl mb-4 block">#1 Student Freelance Platform</span>
                         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] tracking-tighter">
-                            New Energy <br /> <span className="text-emerald-400">for the Future</span>
+                            New Energy <br /> <span className="text-gradient">for the Future</span>
                         </h1>
                     </div>
 

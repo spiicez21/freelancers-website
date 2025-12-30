@@ -18,7 +18,7 @@ const About: React.FC = () => {
                     <div className="absolute bottom-0 left-0 p-8 md:p-16 max-w-4xl">
                         <span className="text-emerald-400 font-medium tracking-wide text-lg mb-4 block">Our Mission</span>
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-tight mb-6">
-                            Building the <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Future of Work</span>
+                            Building the <br /> <span className="text-gradient">Future of Work</span>
                         </h1>
                         <p className="text-xl text-zinc-300 max-w-2xl leading-relaxed">
                             College Freelancers bridges the gap between ambitious student talent and businesses needing professional-grade digital solutions.
