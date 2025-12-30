@@ -2,14 +2,21 @@
 @config "../tailwind.config.js";
 
 @theme {
-  --color-brand-primary: #10b981;
-  /* emerald-500 */
-  --color-brand-secondary: #4ade80;
-  /* green-400 */
+  /* Override Emerald Palette with "Royal Green" */
+  --color-emerald-400: #33FF66;
+  --color-emerald-500: #00CC33;
+  /* Bright End */
+  --color-emerald-600: #009926;
+  --color-emerald-700: #00731F;
+  --color-emerald-800: #005C2B;
+  /* Dark Start "Royal" */
+  --color-emerald-900: #003D1C;
+
+  --color-brand-primary: #00CC33;
+  --color-brand-secondary: #005C2B;
+
   --color-brand-dark: #09090b;
-  /* zinc-950 */
   --color-brand-light: #f4f4f5;
-  /* zinc-100 */
 
   --font-display: "Inter", "sans-serif";
   --font-body: "Inter", "sans-serif";
@@ -17,11 +24,11 @@
 
 @layer base {
   body {
-    @apply bg-zinc-50 text-zinc-900 antialiased selection:bg-emerald-500/20 selection:text-emerald-700;
+    @apply bg-zinc-50 text-zinc-900 antialiased selection:bg-emerald-500/30 selection:text-emerald-900;
   }
 
   .dark body {
-    @apply bg-zinc-950 text-zinc-100 selection:bg-emerald-500/30 selection:text-emerald-400;
+    @apply bg-zinc-950 text-zinc-100 selection:bg-emerald-500/30 selection:text-white;
   }
 
   ::-webkit-scrollbar-track {
@@ -36,10 +43,15 @@
 /* Custom Gradient Utilities */
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-green-500;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg, #00CC33 0%, #005C2B 100%);
   }
 
   .bg-gradient-primary {
-    @apply bg-gradient-to-r from-emerald-500 to-green-500;
+    background-image: linear-gradient(90deg, #005C2B 0%, #00CC33 100%);
+  }
+
+  .bg-royal-gradient {
+    background: linear-gradient(90deg, hsla(148, 100%, 18%, 1) 0%, hsla(135, 100%, 40%, 1) 100%);
   }
 }
