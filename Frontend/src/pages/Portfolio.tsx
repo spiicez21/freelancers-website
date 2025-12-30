@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Linkedin, Globe, Download, ArrowLeft } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
+import ProjectCard from '../components/ProjectCard';
 
 const Portfolio: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -67,16 +68,13 @@ const Portfolio: React.FC = () => {
                 <h2 className="text-xl font-bold dark:text-white">Selected Works</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {[1, 2].map((i) => (
-                        <div key={i} className="group bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-all cursor-pointer">
-                            <div className="h-64 bg-zinc-100 dark:bg-zinc-800 relative">
-                                {/* Placeholder */}
-                                <div className="absolute inset-0 flex items-center justify-center text-zinc-400 text-sm">Project Thumbnail</div>
-                            </div>
-                            <div className="p-5">
-                                <h3 className="font-bold text-lg dark:text-white group-hover:text-emerald-500 transition-colors">Project Title {i}</h3>
-                                <p className="text-zinc-500 dark:text-zinc-400 text-sm mt-1">Design • Development</p>
-                            </div>
-                        </div>
+                        <ProjectCard
+                            key={i}
+                            id={i}
+                            title={`Project Title ${i}`}
+                            category="Design"
+                            member="Alex Johnson"
+                        />
                     ))}
                 </div>
             </section>

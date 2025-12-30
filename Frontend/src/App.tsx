@@ -7,6 +7,7 @@ import Hire from './pages/Hire';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Legal from './pages/Legal';
+import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
           <Route path="members" element={<Members />} />
           <Route path="members/:id" element={<Portfolio />} />
           <Route path="works" element={<Works />} />
-          <Route path="hire" element={<Hire />} />
-          <Route path="about" element={<About />} />
-          <Route path="privacy" element={<Legal />} />
+          <Route path="/hire" element={<Hire />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/works/:id" element={<ProjectDetail />} />
+          <Route path="/members/:id" element={<Portfolio />} />
           <Route path="terms" element={<Legal />} />
           <Route path="*" element={<div className='text-center py-20 dark:text-white'>404 Not Found</div>} />
         </Route>
