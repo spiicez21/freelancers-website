@@ -46,7 +46,7 @@
   :root {
     --apple-border: rgba(0, 0, 0, 0.08);
     --apple-bg: rgba(255, 255, 255, 0.7);
-    --bg-gradient-start: #ecfdf5;
+    --bg-gradient-start: #fafafa;
     --bg-gradient-end: #fafafa;
     --selection-bg: rgba(16, 185, 129, 0.3);
     --selection-text: #064e40;
@@ -54,9 +54,9 @@
 
   .dark {
     --apple-border: rgba(255, 255, 255, 0.1);
-    --apple-bg: rgba(0, 0, 0, 0.6);
-    --bg-gradient-start: #064e40;
-    --bg-gradient-end: #070707;
+    --apple-bg: rgba(9, 9, 11, 0.8);
+    --bg-gradient-start: #09090b;
+    --bg-gradient-end: #09090b;
     --selection-bg: rgba(16, 185, 129, 0.3);
     --selection-text: #ffffff;
   }

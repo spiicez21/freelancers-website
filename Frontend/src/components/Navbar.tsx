@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
     return (
         <>
             {/* Modular Compact Navbar - Floating Island Style */}
-            <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl z-50 apple-blur rounded-2xl px-6 py-4 transition-all duration-300">
+            <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl z-50 apple-blur rounded-2xl px-6 py-4 transition-all duration-300">
                 <div className="flex items-center justify-between">
 
                     {/* Logo Section */}

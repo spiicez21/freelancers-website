@@ -28,8 +28,8 @@ const MemberCard: React.FC<MemberProps> = ({ id, name, role, skills, image, onCl
             </div>
 
             {/* Content Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent dark:from-black/90 dark:via-black/20 dark:to-transparent flex flex-col justify-end p-6">
-                <div className="apple-blur p-4 rounded-2xl border border-zinc-200/50 dark:border-white/10 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent dark:from-black/90 dark:via-black/20 dark:to-transparent flex flex-col justify-end p-4 md:p-6">
+                <div className="apple-blur p-4 rounded-2xl border border-zinc-200/50 dark:border-white/10 translate-y-0 md:translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                     <div className="flex items-center justify-between mb-2">
                         <h3 className="text-xl font-bold text-zinc-900 dark:text-white font-display">{name}</h3>
                         <BadgeCheck className="text-emerald-600 dark:text-emerald-400" size={20} />

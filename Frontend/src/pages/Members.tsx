@@ -13,24 +13,24 @@ const Members: React.FC = () => {
     ];
 
     return (
-        <div className="space-y-8">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="space-y-6 md:space-y-12">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                 <div>
-                    <h1 className="text-4xl font-bold text-zinc-900 dark:text-white font-display">Our Members</h1>
-                    <p className="text-zinc-500 dark:text-zinc-400 font-body">Discover the talented freelancers in our club.</p>
+                    <h1 className="text-3xl md:text-5xl font-bold text-zinc-900 dark:text-white font-display tracking-tight">Our Members</h1>
+                    <p className="text-zinc-500 dark:text-zinc-400 font-body mt-1 md:mt-2">Discover the elite talent within our community.</p>
                 </div>
 
                 <div className="flex gap-2 w-full md:w-auto">
                     <div className="relative flex-1 md:w-80">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
+                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" size={16} />
                         <input
                             type="text"
                             placeholder="Search members..."
-                            className="w-full pl-12 pr-4 py-3 apple-blur border border-zinc-200 dark:border-white/10 rounded-2xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-sm font-body transition-all"
+                            className="w-full pl-12 pr-4 py-3 apple-blur border border-zinc-200 dark:border-white/10 rounded-2xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none dark:text-white text-xs font-display tracking-wide uppercase transition-all"
                         />
                     </div>
                     <button className="p-3 apple-blur border border-zinc-200 dark:border-white/10 rounded-2xl hover:bg-black/5 dark:hover:bg-white/10 text-zinc-600 dark:text-zinc-400 transition-colors">
-                        <Filter size={20} />
+                        <Filter size={18} />
                     </button>
                 </div>
             </div>
