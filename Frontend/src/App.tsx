@@ -13,6 +13,10 @@ import Privacy from './pages/Privacy';
 import HelpCenter from './pages/HelpCenter';
 import HiringGuide from './pages/HiringGuide';
 import ServerStatus from './pages/ServerStatus';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Onboarding from './pages/Onboarding';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -33,6 +37,10 @@ function App() {
           <Route path="help" element={<HelpCenter />} />
           <Route path="guide" element={<HiringGuide />} />
           <Route path="status" element={<ServerStatus />} />
+          <Route path="login" element={<Login />} />
+          <Route path="join" element={<Signup />} />
+          <Route path="onboarding" element={<Onboarding />} />
+          <Route path="admin" element={<Admin />} />
           <Route path="*" element={<div className='text-center py-20 dark:text-white'>404 Not Found</div>} />
         </Route>
       </Routes>

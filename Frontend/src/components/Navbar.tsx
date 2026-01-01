@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, ArrowRight } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import Button from './ui/Button';
 
 interface NavbarProps {
@@ -57,8 +57,8 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                                 key={link.name}
                                 to={link.path}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${location.pathname === link.path
-                                        ? 'bg-zinc-100 dark:bg-zinc-800/80 text-emerald-600 dark:text-emerald-400'
-                                        : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/50'
+                                    ? 'bg-zinc-100 dark:bg-zinc-800/80 text-emerald-600 dark:text-emerald-400'
+                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/50'
                                     }`}
                             >
                                 {link.name}
@@ -76,11 +76,16 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
                         </button>
 
-                        <Link to="/hire" className="hidden md:inline-flex">
-                            <Button size="sm" className="rounded-full px-5 text-xs font-bold">
-                                Hire Talent
-                            </Button>
-                        </Link>
+                        <div className="hidden md:flex items-center gap-4 ml-1">
+                            <Link to="/login" className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-emerald-500 transition-colors">
+                                Log in
+                            </Link>
+                            <Link to="/join">
+                                <Button size="sm" className="rounded-full px-5 text-xs font-bold">
+                                    Join
+                                </Button>
+                            </Link>
+                        </div>
 
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -112,8 +117,8 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                             key={link.name}
                             to={link.path}
                             className={`text-3xl font-bold tracking-tight transition-colors duration-200 ${location.pathname === link.path
-                                    ? 'text-emerald-500'
-                                    : 'text-zinc-900 dark:text-white hover:text-emerald-500'
+                                ? 'text-emerald-500'
+                                : 'text-zinc-900 dark:text-white hover:text-emerald-500'
                                 }`}
                             style={{ transitionDelay: `${idx * 50}ms` }}
                         >
@@ -121,11 +126,16 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                         </Link>
                     ))}
 
-                    <Link to="/hire" onClick={() => setIsOpen(false)}>
-                        <Button size="lg" className="mt-8 rounded-full text-lg px-8">
-                            Start Hiring <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
-                    </Link>
+                    <div className="flex flex-col gap-4 w-full px-8">
+                        <Link to="/join" onClick={() => setIsOpen(false)}>
+                            <Button size="lg" className="w-full rounded-full text-lg">
+                                Join Now
+                            </Button>
+                        </Link>
+                        <Link to="/login" onClick={() => setIsOpen(false)} className="text-zinc-500 dark:text-zinc-400 hover:text-emerald-500 transition-colors">
+                            Log in
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Decorative Bottom Text */}
