@@ -37,28 +37,28 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
     return (
         <>
             {/* Modular Compact Navbar - Floating Island Style */}
-            <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-lg border border-zinc-200 dark:border-zinc-800 rounded-full px-6 py-3 shadow-sm transition-all duration-300">
+            <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl z-50 apple-blur rounded-2xl px-6 py-4 transition-all duration-300">
                 <div className="flex items-center justify-between">
 
                     {/* Logo Section */}
-                    <Link to="/" className="flex items-center space-x-2.5 group">
-                        <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-                            <span className="text-white font-bold text-lg">C</span>
+                    <Link to="/" className="flex items-center space-x-3 group">
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                            <span className="text-white font-bold text-xl font-display">C</span>
                         </div>
-                        <span className="font-bold text-lg tracking-tight text-zinc-900 dark:text-white">
+                        <span className="font-bold text-xl tracking-tight text-zinc-900 dark:text-white font-display">
                             College<span className="text-emerald-500">Freelancers</span>
                         </span>
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-1">
+                    <div className="hidden md:flex items-center space-x-2">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 to={link.path}
-                                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${location.pathname === link.path
-                                    ? 'bg-zinc-100 dark:bg-zinc-800/80 text-emerald-600 dark:text-emerald-400'
-                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/50'
+                                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${location.pathname === link.path
+                                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50'
                                     }`}
                             >
                                 {link.name}

@@ -27,52 +27,46 @@ const Home: React.FC = () => {
                     */}
 
                     {/* Card 1: Header/Intro */}
-                    <div className="md:col-span-2 p-10 rounded-[40px] bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative overflow-hidden group flex flex-col justify-center">
-                        <div className="absolute inset-0 bg-gradient-to-br from-zinc-100 to-white dark:from-zinc-800 dark:to-black opacity-80 dark:opacity-50" />
+                    <div className="md:col-span-2 p-10 rounded-[32px] bg-white dark:bg-emerald-950/20 border border-zinc-200 dark:border-white/5 relative overflow-hidden flex flex-col justify-center">
                         <div className="relative z-10">
-                            <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white mb-6">Why Choose Us?</h2>
-                            <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-lg leading-relaxed">
+                            <h2 className="text-4xl md:text-5xl font-bold dark:text-white mb-6 font-display">Why Choose Us?</h2>
+                            <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-lg leading-relaxed font-body">
                                 We combine academic excellence with professional delivery standards to bring you the best of both worlds.
                             </p>
                         </div>
-                        {/* Decorative grain/noise */}
-                        <div className="absolute inset-0 opacity-10 dark:opacity-20 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-cover"></div>
                     </div>
 
                     {/* Card 2: Fresh Perspectives */}
-                    <div className="p-8 rounded-[40px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative overflow-hidden group flex flex-col justify-between">
-                        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-transparent dark:from-emerald-900/40 dark:to-black" />
+                    <div className="p-8 rounded-[32px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 relative overflow-hidden flex flex-col justify-between">
                         <div className="relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-emerald-100/50 dark:bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400">
+                            <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400">
                                 <Lightbulb size={28} />
                             </div>
-                            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3">Fresh Perspectives</h3>
-                            <p className="text-zinc-600 dark:text-zinc-400">Innovative solutions using the latest technologies.</p>
+                            <h3 className="text-2xl font-bold dark:text-white mb-3 font-display">Fresh Perspectives</h3>
+                            <p className="text-zinc-600 dark:text-zinc-400 font-body">Innovative solutions using the latest technologies.</p>
                         </div>
                     </div>
 
                     {/* Card 3: Vetted Talent */}
-                    <div className="p-8 rounded-[40px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative overflow-hidden group flex flex-col justify-between">
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-900/40 dark:to-black" />
+                    <div className="p-8 rounded-[32px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 relative overflow-hidden flex flex-col justify-between">
                         <div className="relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-blue-100/50 dark:bg-blue-500/10 flex items-center justify-center mb-6 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400">
+                            <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400">
                                 <ShieldCheck size={28} />
                             </div>
-                            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3">Vetted Talent</h3>
-                            <p className="text-zinc-600 dark:text-zinc-400">Only top-performing students with proven portfolios.</p>
+                            <h3 className="text-2xl font-bold dark:text-white mb-3 font-display">Vetted Talent</h3>
+                            <p className="text-zinc-600 dark:text-zinc-400 font-body">Only top-performing students with proven portfolios.</p>
                         </div>
                     </div>
 
-                    {/* Card 4: Cost Effective (Span 2 to balance) */}
-                    <div className="md:col-span-2 p-8 rounded-[40px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative overflow-hidden group flex items-center">
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent dark:from-purple-900/40 dark:to-black" />
-                        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
-                            <div className="w-14 h-14 rounded-2xl bg-purple-100/50 dark:bg-purple-500/10 flex items-center justify-center border border-purple-200 dark:border-purple-500/20 text-purple-600 dark:text-purple-400 shrink-0">
+                    {/* Card 4: Cost Effective */}
+                    <div className="md:col-span-2 p-8 rounded-[32px] bg-white dark:bg-[#070707] border border-zinc-200 dark:border-white/5 relative overflow-hidden flex items-center">
+                        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6 w-full">
+                            <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 shrink-0">
                                 <Gem size={28} />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-2">Cost Effective</h3>
-                                <p className="text-zinc-600 dark:text-zinc-400">Premium quality deliverables at competitive academic rates, ensuring you get maximum value for your investment.</p>
+                                <h3 className="text-2xl font-bold dark:text-white mb-2 font-display">Cost Effective</h3>
+                                <p className="text-zinc-600 dark:text-zinc-400 font-body">Premium quality deliverables at competitive academic rates, ensuring you get maximum value for your investment.</p>
                             </div>
                         </div>
                     </div>

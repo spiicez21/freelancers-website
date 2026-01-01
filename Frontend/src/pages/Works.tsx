@@ -18,21 +18,23 @@ const Works: React.FC = () => {
         <div className="space-y-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <h1 className="text-3xl font-bold dark:text-white tracking-tight">Featured Projects</h1>
-                    <p className="text-zinc-500 dark:text-zinc-400 text-sm">Real work delivered by our students.</p>
+                    <h1 className="text-4xl font-bold text-zinc-900 dark:text-white font-display">Featured Projects</h1>
+                    <p className="text-zinc-500 dark:text-zinc-400 font-body">Real work delivered by our members.</p>
                 </div>
 
                 <div className="flex gap-2">
-                    <button className="px-3 py-2 text-sm border border-zinc-200 dark:border-zinc-800 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400 flex items-center gap-2 transition-colors">
-                        <Filter size={16} /> Filters
+                    <button className="px-5 py-2.5 apple-blur border border-zinc-200 dark:border-white/10 rounded-2xl hover:bg-black/5 dark:hover:bg-white/10 text-zinc-600 dark:text-zinc-400 flex items-center gap-2 transition-all font-body text-sm">
+                        <Filter size={18} /> FILTERS
                     </button>
                 </div>
             </div>
 
             {/* Category Tabs */}
-            <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
+            <div className="flex gap-3 overflow-x-auto pb-4 no-scrollbar">
                 {categories.map((cat, i) => (
-                    <button key={cat} className={`px-4 py-2 text-xs font-semibold rounded-full whitespace-nowrap transition-all ${i === 0 ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/25' : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/30'}`}>
+                    <button key={cat} className={`px-6 py-2.5 text-xs font-bold rounded-full whitespace-nowrap transition-all uppercase tracking-wider font-display ${i === 0
+                        ? 'bg-emerald-500 text-white shadow-xl shadow-emerald-500/20'
+                        : 'apple-blur text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-white/10 hover:border-emerald-500/50 dark:hover:border-emerald-500/50'}`}>
                         {cat}
                     </button>
                 ))}
