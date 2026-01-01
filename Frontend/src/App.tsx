@@ -17,6 +17,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Onboarding from './pages/Onboarding';
 import Admin from './pages/Admin';
+import EditProfile from './pages/EditProfile';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="join" element={<Signup />} />
           <Route path="onboarding" element={<Onboarding />} />
+          <Route path="edit-profile" element={<EditProfile />} />
           <Route path="admin" element={<Admin />} />
           <Route path="*" element={<div className='text-center py-20 dark:text-white'>404 Not Found</div>} />
         </Route>

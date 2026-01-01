@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ id, title, category, member, imag
                     <div className="apple-blur p-5 md:p-6 rounded-[24px] border border-zinc-200/50 dark:border-white/10 translate-y-0 md:translate-y-2 group-hover:translate-y-0 transition-transform duration-500 shadow-xl">
                         <div className="flex items-start justify-between gap-4 mb-2">
                             <h3 className="text-xl md:text-2xl font-bold text-zinc-900 dark:text-white font-display leading-tight tracking-tight">{title}</h3>
-                            <span className="shrink-0 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-lg bg-emerald-500 text-white shadow-lg shadow-emerald-500/20 font-display">
+                            <span className="shrink-0 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-lg bg-emerald-500 text-white shadow-lg shadow-emerald-500/20 font-display max-w-[120px] truncate">
                                 {category}
                             </span>
                         </div>

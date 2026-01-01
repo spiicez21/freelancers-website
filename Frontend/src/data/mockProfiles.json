@@ -1,0 +1,128 @@
+[
+    {
+        "id": "101",
+        "name": "Sarah Jenkins",
+        "email": "sarah.j@example.com",
+        "role": "user",
+        "status": "pending",
+        "tagline": "Senior Product Designer",
+        "bio": "Bridging the gap between user needs and business goals through research-driven design systems. 8+ years experience in FinTech and SaaS.",
+        "techStack": [
+            "Figma",
+            "Design Systems",
+            "User Research",
+            "Prototyping"
+        ],
+        "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop",
+        "bannerImage": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop",
+        "availability": "Available",
+        "rate": "$85/hr",
+        "experience": "8 Years",
+        "socials": {
+            "linkedin": "#",
+            "github": "#",
+            "portfolio": "#"
+        },
+        "projects": [
+            {
+                "title": "Neobank App Redesign",
+                "link": "#",
+                "description": "Unified the design language across 12 product squads, increasing user retention by 20%."
+            }
+        ]
+    },
+    {
+        "id": "102",
+        "name": "Marcus Thorne",
+        "email": "marcus.t@example.com",
+        "role": "user",
+        "status": "pending",
+        "tagline": "Full Stack Architect",
+        "bio": "Specializing in distributed systems and high-scale Cloud architectures. Obsessed with performance and developer experience.",
+        "techStack": [
+            "Next.js",
+            "Trpc",
+            "AWS",
+            "Kubernetes",
+            "PostgreSQL"
+        ],
+        "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop",
+        "bannerImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
+        "availability": "Busy",
+        "rate": "$120/hr",
+        "experience": "10 Years",
+        "socials": {
+            "github": "#",
+            "linkedin": "#"
+        },
+        "projects": [
+            {
+                "title": "Global Logistics Engine",
+                "link": "#",
+                "description": "Built a real-time tracking engine handling 5M+ events per minute with sub-second latency."
+            }
+        ]
+    },
+    {
+        "id": "103",
+        "name": "Aisha Khan",
+        "email": "aisha@example.com",
+        "role": "user",
+        "status": "pending",
+        "tagline": "Creative Technologist",
+        "bio": "Exploring the intersection of code, art, and immersive technology. Crafting premium 3D web experiences.",
+        "techStack": [
+            "Three.js",
+            "WebGL",
+            "React Three Fiber",
+            "GSAP"
+        ],
+        "profileImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop",
+        "bannerImage": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop",
+        "availability": "Open",
+        "rate": "$95/hr",
+        "experience": "4 Years",
+        "socials": {
+            "portfolio": "#",
+            "github": "#"
+        },
+        "projects": [
+            {
+                "title": "Interactive Brand Space",
+                "link": "#",
+                "description": "A fully immersive 3D digital showroom floor for a major fashion house."
+            }
+        ]
+    },
+    {
+        "id": "104",
+        "name": "Leo Chen",
+        "email": "leo.c@example.com",
+        "role": "user",
+        "status": "pending",
+        "tagline": "ML Engineer & Data Scientist",
+        "bio": "Transforming data into actionable intelligence. Expertise in LLM fine-tuning and predictive modeling.",
+        "techStack": [
+            "Python",
+            "PyTorch",
+            "HuggingFace",
+            "Scikit-Learn"
+        ],
+        "profileImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop",
+        "bannerImage": "https://images.unsplash.com/photo-1551288049-bbdac8a28a1e?q=80&w=2070&auto=format&fit=crop",
+        "availability": "Available",
+        "rate": "$110/hr",
+        "experience": "6 Years",
+        "socials": {
+            "github": "#",
+            "linkedin": "#"
+        },
+        "projects": [
+            {
+                "title": "Sentiment Analysis Core",
+                "link": "#",
+                "description": "Proprietary model for analyzing market sentiment across social channels with 94% accuracy."
+            }
+        ]
+    }
+]

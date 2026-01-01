@@ -1,16 +1,19 @@
 import React from 'react';
 import { Filter } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
+import mockProfiles from '../data/mockProfiles.json';
 
 const Works: React.FC = () => {
-    const projects = [
-        { id: 1, title: 'E-Commerce Redesign', category: 'Design', image: 'bg-emerald-100 dark:bg-emerald-900/20', member: 'Alex J.' },
-        { id: 2, title: 'SaaS Dashboard', category: 'Development', image: 'bg-blue-100 dark:bg-blue-900/20', member: 'Sam R.' },
-        { id: 3, title: 'Marketing Campaign', category: 'Marketing', image: 'bg-purple-100 dark:bg-purple-900/20', member: 'Casey S.' },
-        { id: 4, title: 'Mobile Banking App', category: 'Development', image: 'bg-orange-100 dark:bg-orange-900/20', member: 'Morgan K.' },
-        { id: 5, title: 'Brand Identity', category: 'Design', image: 'bg-pink-100 dark:bg-pink-900/20', member: 'Taylor D.' },
-        { id: 6, title: 'AI Content Tool', category: 'AI / ML', image: 'bg-green-100 dark:bg-green-900/20', member: 'Jordan L.' },
-    ];
+    // Generate projects from all mock users
+    const projects = mockProfiles.flatMap(user =>
+        (user.projects || []).map((proj, idx) => ({
+            id: `${user.id}-${idx}`,
+            title: proj.title,
+            category: proj.description.split('.')[0], // Use first sentence as category or role
+            member: user.name,
+            image: `bg-emerald-500/${10 + (idx * 10)}` // Variety in backgrounds
+        }))
+    );
 
     const categories = ['All', 'Design', 'Development', 'Marketing', 'AI / ML'];
 

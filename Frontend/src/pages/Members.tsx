@@ -1,16 +1,17 @@
 import React from 'react';
 import { Search, Filter } from 'lucide-react';
 import MemberCard from '../components/MemberCard';
+import mockProfiles from '../data/mockProfiles.json';
 
 const Members: React.FC = () => {
-    const members = [
-        { id: 1, name: 'Alex Johnson', role: 'UI/UX Designer', skills: ['Figma', 'React', 'Prototyping'], status: 'Available' },
-        { id: 2, name: 'Sam Rivera', role: 'Frontend Dev', skills: ['React', 'Tailwind', 'TypeScript'], status: 'Busy' },
-        { id: 3, name: 'Jordan Lee', role: 'Full Stack', skills: ['Node.js', 'Python', 'AWS'], status: 'Available' },
-        { id: 4, name: 'Casey Smith', role: 'Content Writer', skills: ['SEO', 'Copywriting', 'Blogs'], status: 'Available' },
-        { id: 5, name: 'Taylor Doe', role: 'Graphic Designer', skills: ['Photoshop', 'Illustrator', 'Branding'], status: 'Busy' },
-        { id: 6, name: 'Morgan Kim', role: 'Mobile Dev', skills: ['Flutter', 'Dart', 'Firebase'], status: 'Available' },
-    ];
+    const members = mockProfiles.map(m => ({
+        id: m.id,
+        name: m.name,
+        role: m.tagline,
+        skills: m.techStack,
+        status: m.availability,
+        image: m.profileImage
+    }));
 
     return (
         <div className="space-y-6 md:space-y-12">
