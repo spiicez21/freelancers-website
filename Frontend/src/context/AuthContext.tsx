@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import mockProfiles from '../data/mockProfiles.json';
 
 // Types
 export interface User {
@@ -11,6 +12,7 @@ export interface User {
     bio?: string;
     techStack?: string[];
     profileImage?: string;
+    bannerImage?: string;
     availability?: 'Available' | 'Busy' | 'Open';
     rate?: string;
     experience?: string;
@@ -50,42 +52,8 @@ const INITIAL_ADMIN: User = {
     tagline: 'System Administrator'
 };
 
-const MOCK_PENDING: User[] = [
-    {
-        id: '2',
-        name: 'Alice Chen',
-        email: 'alice@example.com',
-        role: 'user',
-        status: 'pending',
-        tagline: 'Full Stack Developer',
-        bio: 'Passionate about building scalable web applications. Expert in React and Node.js.',
-        techStack: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
-        profileImage: '',
-        availability: 'Available',
-        rate: '$45/hr',
-        experience: '3 Years',
-        projects: [
-            { title: 'E-Commerce Platform', link: '#', description: 'A full-featured shopping platform with Stripe integration.' }
-        ]
-    },
-    {
-        id: '3',
-        name: 'Marcus Johnson',
-        email: 'marcus@example.com',
-        role: 'user',
-        status: 'pending',
-        tagline: 'UI/UX Designer',
-        bio: 'Creating beautiful and intuitive user interfaces. Minimalist design philosophy.',
-        techStack: ['Figma', 'Tailwind CSS', 'Framer Motion'],
-        profileImage: '',
-        availability: 'Open',
-        rate: '$55/hr',
-        experience: '4 Years',
-        projects: [
-            { title: 'Finance Dashboard', link: '#', description: 'A clean dashboard for personal finance tracking.' }
-        ]
-    },
-];
+
+const MOCK_PENDING: User[] = mockProfiles as User[];
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     // Load from local storage or use defaults
@@ -96,7 +64,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const [pendingUsers, setPendingUsers] = useState<User[]>(() => {
         const stored = localStorage.getItem('pendingUsers_v1');
-        return stored ? JSON.parse(stored) : MOCK_PENDING;
+        const parsed = stored ? JSON.parse(stored) : null;
+        // If nothing in storage OR we have cleared everything, re-seed with mock data
+        return (parsed && parsed.length > 0) ? parsed : MOCK_PENDING;
     });
 
     // Persist state
@@ -120,7 +90,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 name: 'Test User',
                 email,
                 role: 'user',
-                status: 'approved' // Auto approve for simple login demo unless specific flow
+                status: 'approved',
+                tagline: 'Brand Designer',
+                bio: 'Creating impactful visual identities for the next generation of digital products.',
+                techStack: ['Figma', 'Illustrator', 'React'],
+                availability: 'Available',
+                rate: '$40/hr',
+                experience: '2+ Years',
+                projects: [
+                    { title: 'Project 1', link: '#', description: 'Brief showcase project.' }
+                ]
             });
         }
     };

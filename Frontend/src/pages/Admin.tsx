@@ -61,16 +61,16 @@ const Admin: React.FC = () => {
                     <div className="bg-white dark:bg-zinc-950 w-full max-w-4xl max-h-[90vh] rounded-[32px] shadow-2xl overflow-hidden flex flex-col border border-zinc-200 dark:border-zinc-800 relative">
 
                         {/* Modal Header / Actions */}
-                        <div className="absolute top-0 left-0 right-0 p-6 flex justify-between items-start z-10 pointer-events-none">
-                            <button onClick={() => setSelectedUser(null)} className="px-4 py-2 bg-black/20 backdrop-blur-md rounded-full text-white pointer-events-auto hover:bg-black/40 transition-colors flex items-center gap-2 font-medium border border-white/10">
-                                <ArrowLeft size={18} />
+                        <div className="absolute top-0 left-0 right-0 p-6 flex justify-between items-center z-30">
+                            <button onClick={() => setSelectedUser(null)} className="px-5 py-2.5 bg-zinc-900/40 backdrop-blur-xl rounded-2xl text-white hover:bg-zinc-900/60 transition-all flex items-center gap-2 font-display text-xs font-bold tracking-widest uppercase border border-white/10 group">
+                                <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
                                 <span>Back</span>
                             </button>
-                            <div className="flex gap-2 pointer-events-auto">
-                                <button onClick={() => handleReject(selectedUser.id)} className="px-4 py-2 bg-red-500 text-white rounded-full text-sm font-bold shadow-lg shadow-red-500/20 hover:bg-red-600 transition-colors">
+                            <div className="flex gap-3">
+                                <button onClick={() => handleReject(selectedUser.id)} className="px-6 py-2.5 bg-red-500 hover:bg-red-600 text-white rounded-2xl text-xs font-bold font-display tracking-widest uppercase shadow-lg shadow-red-500/20 active:scale-95 transition-all">
                                     Reject
                                 </button>
-                                <button onClick={() => handleApprove(selectedUser.id)} className="px-6 py-2 bg-emerald-500 text-white rounded-full text-sm font-bold shadow-lg shadow-emerald-500/20 hover:bg-emerald-600 transition-colors flex items-center gap-2">
+                                <button onClick={() => handleApprove(selectedUser.id)} className="px-8 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-2xl text-xs font-bold font-display tracking-widest uppercase shadow-lg shadow-emerald-500/40 active:scale-95 transition-all flex items-center gap-2">
                                     Approve Candidate <Check size={16} />
                                 </button>
                             </div>
@@ -78,8 +78,15 @@ const Admin: React.FC = () => {
 
                         {/* Modal Content - Scrollable */}
                         <div className="overflow-y-auto custom-scrollbar flex-1 h-full">
-                            {/* Cover / Header Section */}
-                            <div className="h-32 bg-gradient-to-r from-emerald-900 to-zinc-900 relative"></div>
+                            {/* Banner Section */}
+                            <div className="h-40 md:h-48 relative overflow-hidden">
+                                <img
+                                    src={selectedUser.bannerImage || "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop"}
+                                    alt="Candidate Banner"
+                                    className="w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent" />
+                            </div>
 
                             <div className="px-8 md:px-12 pb-12 -mt-16">
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
